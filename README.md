@@ -1,6 +1,6 @@
 # EpisodeTrackerBot
 
-EpisodeTrackerBot is a Telegram bot designed to keep you updated on new episodes of your favorite anime series. The bot checks daily for new episodes and sends a notification when a new episode is released. You can also manage your anime watchlist by adding or listing tracked anime shows through simple commands.
+EpisodeTrackerBot is a Telegram bot that keeps you updated on new episodes of your favorite anime series. The bot checks daily for new episodes and sends a notification when a new episode is released. You can also manage your anime watchlist by adding or listing tracked anime shows through simple commands.
 
 Features
 Track multiple anime series and get notified when new episodes are released.
@@ -16,7 +16,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/yourusername/AnimeTrackerBot.git
+git clone https://github.com/iiTzShaa/AnimeTrackerBot.git
 cd AnimeTrackerBot
 Create a virtual environment (recommended):
 
@@ -52,7 +52,7 @@ Commands:
 /getid: Get your Telegram chat ID for setup purposes.
 Daily Notifications:
 
-The bot checks daily at 20:00 for new episodes and will notify you if a new episode is available for any anime on your tracked list.
+The bot checks for new episodes daily at 20:00 and will notify you if a new episode is available for any anime on your tracked list.
 Deployment
 PythonAnywhere
 Upgrade to the Hacker Plan to enable always-on tasks for 24/7 availability.
@@ -61,7 +61,7 @@ Set up environment variables in the Account > Environment Variables section.
 Add an Always-On Task in the Tasks section:
 bash
 Copy code
-/home/yourusername/myenv/bin/python3 /home/yourusername/AnimeTrackerBot/main.py
+/home/Arui43/myenv/bin/python3 /home/Arui43/AnimeTrackerBot/main.py
 Contributing
 If you’d like to add new features or improve the bot, feel free to fork the repository, make changes, and submit a pull request. Contributions are welcome!
 
