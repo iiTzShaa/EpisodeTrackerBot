@@ -10,7 +10,7 @@ tracked_shows = []
 async def initialize_tracked_shows():
     global tracked_shows
     tracked_shows = await read_tracked_shows() or []
-    print("Tracked shows initialized:", tracked_shows)  # Debugging
+    print("Tracked shows initialized:", tracked_shows)  
 
 async def help(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     help_text = (
@@ -33,7 +33,7 @@ async def track(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         if show_name not in tracked_shows:
             tracked_shows.append(show_name)
             await update.message.reply_text(f"Tracking new episodes for '{show_name}'.")
-            await save_tracked_shows(tracked_shows)  # Save the updated list
+            await save_tracked_shows(tracked_shows) 
         else:
             await update.message.reply_text(f"'{show_name}' is already being tracked.")
     else:
@@ -52,7 +52,7 @@ async def get_tracked_shows(update: Update, context: ContextTypes.DEFAULT_TYPE) 
     await update.message.reply_text(message)
 
 async def send_notification(application, chat_id, message):
-    bot = application.bot  # Access the bot instance directly from the application
+    bot = application.bot  
     await bot.send_message(chat_id=chat_id, text=message)
 
 async def getid(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
