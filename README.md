@@ -1,5 +1,6 @@
 
-EpisodeTrackerBot
+#EpisodeTrackerBot
+
 EpisodeTrackerBot is a personal-use Telegram bot that helps you track new episodes of your favorite anime series. It checks daily for updates and notifies you when a new episode is released.
 
 Features
