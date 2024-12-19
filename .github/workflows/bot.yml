@@ -28,8 +28,3 @@ jobs:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}  # Pass the bot token secret here
           CHAT_ID: ${{ secrets.CHAT_ID }}      # Pass the chat ID secret here
         run: python main.py
-
-
-    - name: Run script
-      run: |
-        python main.py
